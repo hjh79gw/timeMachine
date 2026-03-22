@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/timemachine?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul
+    username: root
+    password: YOUR_DB_PASSWORD
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8082
+
+kis:
+  app-key: YOUR_KIS_APP_KEY
+  app-secret: YOUR_KIS_APP_SECRET
+  base-url: https://openapi.koreainvestment.com:9443
+
+openai:
+  api-key: ${OPENAI_API_KEY:YOUR_OPENAI_API_KEY}
+
+naver:
+  client-id: YOUR_NAVER_CLIENT_ID
+  client-secret: YOUR_NAVER_CLIENT_SECRET
+
+logging:
+  level:
+    com.timemachine: INFO

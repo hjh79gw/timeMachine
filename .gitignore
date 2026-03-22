@@ -1,0 +1,23 @@
+# Java / Maven
+backend/target/
+*.class
+*.jar
+*.war
+
+# Spring Boot
+backend/src/main/resources/application.yml
+backend/src/main/resources/application-*.yml
+
+# Node / React
+web/node_modules/
+web/dist/
+web/.env
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
